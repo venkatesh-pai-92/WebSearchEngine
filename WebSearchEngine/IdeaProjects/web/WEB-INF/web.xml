@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServletJSON</servlet-name>
+        <servlet-class>servlet.SearchJson</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>SearchResult</servlet-name>
+        <servlet-class>servlet.SearchResult</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RegisterAdvertisement</servlet-name>
+        <servlet-class>servlet.RegisterAdvertisement</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdvertisementClick</servlet-name>
+        <servlet-class>servlet.AdvertisementClick</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ConfigureSearchEngine</servlet-name>
+        <servlet-class>servlet.ConfigureSearchEngine</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MetaSearchServlet</servlet-name>
+        <servlet-class>servlet.MetaSearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletJSON</servlet-name>
+        <url-pattern>/json</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SearchResult</servlet-name>
+        <url-pattern>/SearchResult</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RegisterAdvertisement</servlet-name>
+        <url-pattern>/RegisterAdvertisement</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdvertisementClick</servlet-name>
+        <url-pattern>/AdvertisementClick</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ConfigureSearchEngine</servlet-name>
+        <url-pattern>/ConfigureSearchEngine</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MetaSearchServlet</servlet-name>
+        <url-pattern>/MetaSearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

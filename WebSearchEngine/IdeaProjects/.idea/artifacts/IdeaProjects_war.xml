@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="IdeaProjects:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/IdeaProjects_war</output-path>
+    <root id="archive" name="IdeaProjects_war.war">
+      <element id="artifact" artifact-name="IdeaProjects:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="edu.mit.jwi_2.4.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

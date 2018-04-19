@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VV Search Engine</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="Search.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapvalidator.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <form action="SearchResult">
+        <input type="hidden" name="language" id="language" value="en">
+        <input type="hidden" name="imageSearch" id="imageSearch" value="false">
+        <div class="row">
+            <div style="color: #4e3a3a; cursor: pointer;float:right;padding: 5px;font-size: 17px;" id="images-text"
+                 onMouseOver="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">
+                Images
+            </div>
+            <div style="color: #4e3a3a; cursor: pointer;float:right;padding: 5px;font-size: 17px;"
+                 onMouseOver="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';"
+                 onClick="location.href='registerAdvertisement.jsp'">Register-Advertisment |
+            </div>
+            <div style="color: #4e3a3a; cursor: pointer;float:right;padding: 5px;font-size: 17px;"
+                 onMouseOver="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';"
+                 onClick="location.href='metaSearch.html'">Meta Search |
+            </div>
+        </div>
+        <div class="row" style="margin-top:35px;margin-bottom:35px;">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="VSearch.png" style="width:600px;height:225px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="query" name="query"
+                               style="width: 490px;height: 35px;box-shadow: 1px 1px 1px 1px #ccc;">
+                    </div>
+                </div>
+                <div class="col-md-1 col-md-offset-1">
+                    <button type="submit" id="Search" class="btn btn-primary" title="Search" style="height: 35px;">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 col-md-offset-4">
+                    <input id="set_parameters" class="btn" type="button" title="Set Parameters" style="height: 30px;"
+                           value="Set Parameters">
+                </div>
+                <div class="col-md-1 col-md-offset-1">
+                    <input id="hiddenLanguage" class="btn" type="button" title="Try Deutsch" style="height: 30px;"
+                           value="Try Deutsch">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="parameters_container">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Query Parameters</div>
+                    <div class="panel-body">
+                        <div class="radio">
+                            <label><input type="radio" name="score" value="1" checked> TF IDF Score</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="score" value="2"> BM 25 Score</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="score" value="3"> BM 25 and Pagerank score</label>
+                        </div>
+                        <div style="float:left;">Max number of results: <input class="form-control" name="k" id="k"
+                                                                               style="width: 150px;height: 25px;box-shadow: 1px 1px 1px 1px #ccc;float:right"
+                                                                               type="text" value="20"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Crawler Parameters</div>
+                    <div class="panel-body">
+                        <!--                                <div style="float:left;">Max documents to crawl: <input class="form-control" name="number_of_documents" id="number_of_documents" style="width: 150px;height: 25px;box-shadow: 1px 1px 1px 1px #ccc;float:right" type="text" value="10"></div>
+                                                        <button type="submit" class="btn btn-primary" title="Run Crawler" style="height: 30px;clear: float;" onclick="form.action='CrawlServlet'">Run Crawler</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

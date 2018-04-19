@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VV Search Engine - MetaSearch</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="Search.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <form action="MetaSearchServlet">
+        <div class="row" style="margin-top:35px;margin-bottom:35px;">
+            <center>
+                <div class="row">
+                    <img src="MetaSearch.png" style="width:600px;height:225px;">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="query" name="query"
+                                   style="width: 425px;height: 33px;box-shadow: 1px 1px 1px 1px #ccc;">
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="margin-left: -438px;">
+                        <button type="submit" id="Search" class="btn btn-primary" title="Search" style="height: 33px;">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input id="btn-configure" class="btn" type="button" title="Configure Search Engines" style="height: 30px;" value="Configure Search Engines" onClick="location.href='configureSearchEngine.jsp'">
+                    </div>
+                </div>
+            </center>
+        </div>
+    </form>
+</div>
+</body>
+</html>

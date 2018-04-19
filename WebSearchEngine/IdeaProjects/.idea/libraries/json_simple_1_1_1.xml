@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="json-simple-1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libraries/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jtidy-r938.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/la4j-0.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/postgresql-9.4.1212.jre6.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>
